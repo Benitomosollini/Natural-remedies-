@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Natural Remedies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2fdf5;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e7d32;
+      padding: 1em;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1.5em;
+      align-items: center;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5em;
+    }
+
+    nav a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #388e3c;
+      list-style: none;
+      padding: 0.5em 0;
+    }
+
+    nav ul li:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown li a {
+      display: block;
+      padding: 0.5em 1em;
+    }
+
+    main {
+      padding: 2em;
+    }
+
+    .hero, .about, .contact, .remedies {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .remedy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5em;
+      margin-top: 2em;
+    }
+
+    .remedy-item {
+      background-color: #ffffff;
+      border: 1px solid #c8e6c9;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .remedy-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.75em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      width: fit-content;
+      padding: 0.75em 1.5em;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-details {
+      margin-top: 2em;
+      background-color: #f0fdf4;
+      padding: 1em;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #e0f2f1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Natural Remedies</h1>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li>
+          <a href="#">Classifications</a>
+          <ul class="dropdown">
+            <li><a href="#">Herbal Remedies</a></li>
+            <li><a href="#">Aromatherapy</a></li>
+            <li><a href="#">Homeopathy</a></li>
+            <li><a href="#">Diseases Treated</a></li>
+          </ul>
+        </li>
+        <li><a href="#remedies">Remedies</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section id="home" class="hero">
+      <h2>Healing naturally, one remedy at a time</h2>
+      <p>Welcome to Natural Remedies, your trusted source for natural health solutions. Explore safe, time-tested remedies to enhance your well-being.</p>
+    </section>
+
+    <!-- Remedies -->
+    <section id="remedies" class="remedies">
+      <h2>Our Top 10 Natural Remedies</h2>
+      <div class="remedy-grid">
+        <div class="remedy-item"><img src="https://via.placeholder.com/150" alt="Ginger"/><h3>Ginger</h3><p>Used for digestion, nausea, and inflammation.</p></div>
+        <div class="remedy-item"><img src="https://via.placeholder.com/150" alt="Turmeric"/><h3>Turmeric</h3><p>Anti-inflammatory and antioxidant properties.</p></div>
+        <div class="remedy-item"><img src="https://via.placeholder.com/150" alt="Garlic"/><h3>Garlic</h3><p>Boosts immunity and lowers blood pressure.</p></div>
+        <div class="remedy-item"><img src="https://via.placeholder.com/150" alt="Chamomile"/><h3>Chamomile</h3><p>Helps with sleep, anxiety, and digestion.</p></div>
+        <div class="remedy-item"><img src="https://via.placeholder.com/150" alt="Peppermint"/><h3>Peppermint</h3><p>Relieves headaches and digestive discomfort.</p></div>
+        <div class="remedy-item"><img src="https://via.placeholder.com/150" alt="Echinacea"/><h3>Echinacea</h3><p>Supports the immune system during colds.</p></div>
+        <div class="remedy-item"><img src="https://via.placeholder.com/150" alt="Lavender"/><h3>Lavender</h3><p>Used in aromatherapy for stress relief.</p></div>
+        <div class="remedy-item"><img src="https://via.placeholder.com/150" alt="Aloe Vera"/><h3>Aloe Vera</h3><p>Soothes burns and skin irritations.</p></div>
+        <div class="remedy-item"><img src="https://via.placeholder.com/150" alt="Cinnamon"/><h3>Cinnamon</h3><p>Helps regulate blood sugar levels.</p></div>
+        <div class="remedy-item"><img src="https://via.placeholder.com/150" alt="Ginseng"/><h3>Ginseng</h3><p>Boosts energy and mental clarity.</p></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <h2>About Natural Remedies</h2>
+      <p>At Natural Remedies, our mission is to help people live healthier lives through nature’s healing power. We believe in the potential of plants and traditional methods to restore balance and wellness in the body.</p>
+      <p>We source only the highest quality ingredients, rigorously tested and ethically harvested. Our products are crafted with care and a deep respect for ancient wisdom and modern science.</p>
+      <p>Whether you’re managing chronic conditions or simply boosting your everyday vitality, we’re here to support your journey with safe, trusted, and effective natural solutions.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>If you have questions or just want to say hello — we’d love to hear from you!</p>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-details">
+        <h3>Get in Touch</h3>
+        <p>Email: support@naturalremedies.com</p>
+        <p>Phone: +254717280718</p>
+        <p>Address: kitale kenya 1036-30200</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Natural Remedies. All rights reserved.</p>
+  </footer>
+</body>
+</html>
